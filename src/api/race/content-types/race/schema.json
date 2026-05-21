@@ -1,0 +1,72 @@
+{
+  "kind": "collectionType",
+  "collectionName": "races",
+  "info": {
+    "singularName": "race",
+    "pluralName": "races",
+    "displayName": "Race"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "date": {
+      "type": "datetime",
+      "required": true
+    },
+    "location": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "required": true
+    },
+    "country": {
+      "type": "enumeration",
+      "required": true,
+      "default": "Hungary",
+      "enum": [
+        "Hungary"
+      ]
+    },
+    "registration_deadline": {
+      "type": "date"
+    },
+    "og_image_url": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "has_5k": {
+      "type": "boolean"
+    },
+    "has_10k": {
+      "type": "boolean"
+    },
+    "has_21k": {
+      "type": "boolean"
+    },
+    "has_42k": {
+      "type": "boolean"
+    }
+  }
+}
